@@ -1,3 +1,12 @@
+body,
+html,
+#root {
+  height: 100%;
+}
+body{
+  background-image: url('./img/background.jpg');
+  background-size: cover;
+}
 .App {
   height: 100%;
   padding: 0 17% 10% 17%;
@@ -5,33 +14,39 @@
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   color: #000;
+}
+nav{
   display: flex;
-  flex-flow: row;
+  align-items: center;
+  padding: var(--spacing-3) 0;
 }
-.text{
-  font-family: 'Montserrat';
+nav h1{
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.navigation-items{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+}
+nav li{
+  margin-left: 10px;
   display: inline-block;
-  width: 50%;
+  text-align: -webkit-match-parent;
 }
-.text p{
-  line-height: 1.5;
-  width: 550px;
+nav li:hover{
+ cursor: pointer;
+ color: rgb(53, 10, 82);
 }
-.img{
-  display: inline-block;
-  width: 30%;
-}
-.contact{
-  display: inline-block;
-  width: 20%;
-}
-.contact button{
-  top: 0px;
-}
-.img img{
-  margin-left: 30px;
-  width: 200px;
-  height: 300px;
+img{
+  border-radius: 100%;
+  height: 200px;
 }
 #contactBlock{
   width: 25%;
@@ -39,10 +54,10 @@
   transition: right 0.3s;
   position: fixed;
   right: -100%;
+  bottom: 0%;
 }
 #contactBlock h1{
   font-family: 'Montserrat';
-  font-weight: bold;
 }
 #contactBlock p{
   font-family: 'Montserrat';
