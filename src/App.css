@@ -3,6 +3,12 @@ html,
 #root {
   height: 100%;
 }
+p{
+  max-width: 500px;
+}
+li{
+  list-style: none;
+}
 body{
   background-image: url('./img/background.jpg');
   background-size: cover;
@@ -10,39 +16,9 @@ body{
 .App {
   height: 100%;
   padding: 0 17% 10% 17%;
-  margin-top: 50px;
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   color: #000;
-}
-nav{
-  display: flex;
-  align-items: center;
-  padding: var(--spacing-3) 0;
-}
-nav h1{
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-.navigation-items{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
-}
-nav li{
-  margin-left: 10px;
-  display: inline-block;
-  text-align: -webkit-match-parent;
-}
-nav li:hover{
- cursor: pointer;
- color: rgb(53, 10, 82);
 }
 img{
   border-radius: 100%;
@@ -63,4 +39,26 @@ img{
   font-family: 'Montserrat';
   font-size: 16px;
   font-weight: 300;
+}
+.container{
+  margin-top: 50px;
+}
+#skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skills-container > * {
+  height: 2em;
+  font-size: 2em;
+  width: 2em;
+  margin-top: var(--spacing-1);
+}
+.icons{
+  align-items: center;
+}
+.icons svg{
+  margin-left: 20px;
 }
